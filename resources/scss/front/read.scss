@@ -1,0 +1,162 @@
+@import "variables";
+
+@import '~viewerjs/dist/viewer.css';
+
+
+.read {
+    * {
+        direction: rtl;
+        text-align: justify;
+    }
+    .title {
+        text-align: center;
+        margin: 20px;
+    }
+    .excerpt {
+        margin: 30px 0;
+        background: #fff;
+        box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.1);
+        border-radius: 15px;
+        padding: 25px;
+
+        * {
+            font-family: "StoreFont" !important;
+        }
+
+        .title {
+            margin: 10px 0;
+        }
+
+        p {
+            text-align: justify !important;
+            padding: 0 10px !important;
+            font-size: 14px !important;
+            line-height: 2 !important;
+            font-weight: 300;
+            line-height: 24px;
+        }
+    }
+    img {
+        width: 100% !important;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    // physical product detail
+    .physical-product-detail {
+        background: #fff;
+        box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.2);
+        border-radius: 15px;
+        padding: 25px;
+        position: sticky;
+        top: 5%;
+        z-index: 1;
+        margin: 0 0 30px 0;
+
+        h4 {
+            font-size: 21px;
+        }
+
+        span:nth-child(2) {
+            font-family: "IRANYekan";
+        }
+
+        .product-price {
+            .price-off {
+                text-decoration: line-through;
+                color: #7e7e7e;
+                font-size: 12px;
+                margin: 0 0 0 10px;
+            }
+
+            .price-active {
+                font-size: 16px;
+            }
+        }
+
+        .product-number {
+            margin: 15px 0;
+
+            div {
+                border-bottom: 1px solid #3c3c3c28;
+                width: 50%;
+
+                svg {
+                    font-size: 10px;
+                    color: #88eeae;
+                    cursor: pointer;
+                }
+            }
+
+            .productCountStyle {
+                opacity: 0.5;
+                pointer-events: none;
+            }
+        }
+
+        .product-size {
+            label {
+                font-family: "IRANYekan";
+            }
+        }
+
+        .product-color {
+            // radio btn color
+            [type="radio"]:checked + label,
+            [type="radio"]:not(:checked) + label {
+                padding-left: 5px;
+            }
+
+            // red
+            [type="radio"]:checked + label:before,
+            [type="radio"]:not(:checked) + label:before {
+                content: "";
+                border: 2px solid;
+                border-color: var(--borderBefore);
+            }
+
+            [type="radio"]:checked + label:after,
+            [type="radio"]:not(:checked) + label:after {
+                content: "";
+                background: var(--backgroundAfter);
+            }
+        }
+
+        .brand {
+            width: 70px;
+            height: fit-content;
+            overflow: hidden;
+        }
+
+        .status-available {
+            span {
+                font-family: "IRANYekan";
+            }
+        }
+
+        .btn {
+            width: 100%;
+            height: 60px;
+            text-align: center;
+        }
+    }
+
+    .images {
+        display: flex;
+        // justify-content: space-around;
+        overflow: auto;
+        margin-top: 20px;
+        img {
+            width: 100px !important;
+            margin-left: 10px;
+        }
+    }
+    .counter-cart {
+        cursor: pointer;
+        font-size: 18px;
+        .disabled {
+            opacity: 0.2;
+            pointer-events: none;
+        }
+    }
+}

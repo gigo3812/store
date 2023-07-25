@@ -1,0 +1,10 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/login.js": "/js/login.js",
+    "/css/front/layout.css": "/css/front/layout.css",
+    "/css/front/read.css": "/css/front/read.css",
+    "/css/front/browse.css": "/css/front/browse.css",
+    "/css/front/index.css": "/css/front/index.css",
+    "/css/front/login.css": "/css/front/login.css",
+    "/css/front/cart.css": "/css/front/cart.css"
+}

@@ -1,0 +1,84 @@
+body {
+  background: rgb(53, 52, 52) !important;
+}
+
+.login {
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  background: whitesmoke;
+}
+.login .btn {
+  background: #0fc9a4 !important;
+  color: white !important;
+  border-radius: 6px !important;
+  min-width: 40px !important;
+  font-size: 12px !important;
+  padding: 5px 15px !important;
+  border: 2px solid #0fc9a4;
+  outline: 3px solid #0fc9a4 !important;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1) !important;
+}
+.login .btn:hover {
+  border: 2px solid white !important;
+}
+.login .btn-warning {
+  background: #ffa115 !important;
+  color: white !important;
+  border-radius: 6px !important;
+  min-width: 40px !important;
+  font-size: 12px !important;
+  padding: 5px 15px !important;
+  border: 2px solid #ffa115;
+  outline: 3px solid #ffa115 !important;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer;
+  text-align: center;
+}
+.login .btn-warning:hover {
+  border: 2px solid white !important;
+}
+.login .logo {
+  margin-top: 20px;
+  width: 50%;
+}
+.login img {
+  user-zoom: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.login input[type=tel],
+.login input[type=password] {
+  letter-spacing: 10px;
+}
+.login input {
+  padding: 11px;
+}
+.login .pincode input {
+  letter-spacing: 31px !important;
+  text-align: center !important;
+  padding: 20px 0px 20px 20px !important;
+}
+.login .click {
+  cursor: pointer;
+  margin-top: 5px;
+}
+.login .click:hover {
+  font-weight: bold;
+}
+
+.home-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+.home-btn:hover svg path {
+  fill: gray !important;
+}

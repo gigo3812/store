@@ -1,0 +1,31 @@
+.browse .main-title {
+  direction: rtl;
+  text-align: center;
+  margin: 40px auto;
+}
+.browse .card {
+  direction: rtl;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+}
+.browse .card .title {
+  text-align: right;
+}
+.browse .card .body {
+  direction: rtl;
+  text-align: justify;
+  line-height: 24px;
+}
+.browse .card .link {
+  display: block;
+  text-align: left;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.browse .card img {
+  width: 100% !important;
+  height: 180px !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}

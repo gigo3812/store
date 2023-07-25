@@ -1,0 +1,51 @@
+@import "variables";
+
+.cart-page {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    background: whitesmoke;
+    .detail{
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.04);
+        border-radius: 20px;
+    }
+    .cart-detail {
+        max-height: 300px !important;
+        overflow: auto;
+        table {
+            tr,
+            td,
+            th {
+                padding: 20px;
+            }
+            tr {
+                border: 1px solid rgba(128, 128, 128, 0.204);
+            }
+            .count {
+                border: none;
+                width: 50px;
+            }
+            .counter-cart {
+                cursor: pointer;
+                width: 60px;
+                font-size: 15px;
+                .disabled {
+                    opacity: 0.2;
+                    pointer-events: none;
+                }
+            }
+            .remove {
+                cursor: pointer;
+                &:hover {
+                    fill: red;
+                }
+            }
+        }
+
+        img {
+            width: 50px !important;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.cart-page {
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  background: whitesmoke;
+}
+.cart-page .detail {
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+}
+.cart-page .cart-detail {
+  max-height: 300px !important;
+  overflow: auto;
+}
+.cart-page .cart-detail table tr,
+.cart-page .cart-detail table td,
+.cart-page .cart-detail table th {
+  padding: 20px;
+}
+.cart-page .cart-detail table tr {
+  border: 1px solid rgba(128, 128, 128, 0.204);
+}
+.cart-page .cart-detail table .count {
+  border: none;
+  width: 50px;
+}
+.cart-page .cart-detail table .counter-cart {
+  cursor: pointer;
+  width: 60px;
+  font-size: 15px;
+}
+.cart-page .cart-detail table .counter-cart .disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+.cart-page .cart-detail table .remove {
+  cursor: pointer;
+}
+.cart-page .cart-detail table .remove:hover {
+  fill: red;
+}
+.cart-page .cart-detail img {
+  width: 50px !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
